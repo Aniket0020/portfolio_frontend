@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Portfolio | Aniket</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="name">
+        <p><span>Aniket</span> Ahire</p>
+      </div>
+
+      <div class="menu-container">
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="main">
+      <div class="content">
+        <h1><span>Hi, I'm Aniket Ahire</span> <br /></h1>
+        <h1 class="wave-text">Front-End Developer</h1>
+
+        <div class="cv-button">
+          <a
+            href="./file/Aniket_JD_final.pdf"
+            download="AniketAhire_CV"
+            class="btn"
+            >Download CV</a
+          >
+        </div>
+      </div>
+
+      <!-- <div class="bottom">
+        <p>
+          I build modern, responsive web applications with a focus on user experience and performance.
+        </p>
+      </div> -->
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="slide white">
+      <h1 class="heading">About Me</h1>
+      <div class="box">
+        <div class="img">
+          <img src="./assets/profile.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="details">
+            <h2>Jr. Frontend Developer based in Mumbai</h2>
+            <p>
+              I am a startup professional with experience as a Junior Frontend
+              Developer, skilled in building responsive user interfaces and
+              integrating backend services. I work with modern frontend
+              technologies and have backend exposure in Node.js and Java.
+            </p>
+          </div>
+          <!-- <div class="review">
+            <p><strong>0.8+</strong><br />Years experience</p>
+            <p><strong>50+</strong><br />Completed projects</p>
+            <p><strong>10+</strong><br />Satisfied clients</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Projects Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="off-white">
+      <h1 class="heading">Skills</h1>
+      <div class="skills-container">
+        <div class="card">
+          <h2><span class="icon">&lt;/&gt;</span> Frontend Development</h2>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2><span class="icon">&lt;/&gt;</span> Backend Development</h2>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2><span class="icon">&lt;/&gt;</span> Tools & Others</h2>
+          <ul>
+            <li>Github</li>
+            <li>Figma</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="slide white">
+      <h1 class="heading">Projects</h1>
+      <div class="myproject">
+        <div class="project_card">
+          <div class="project_img">
+            <img
+              src="./assets/image.png"
+              alt="Screenshot of Digital Profile Project"
+            />
+            <div class="btn-wrapper">
+              <button>
+                <a href="https://profile-templete.netlify.app/" target="_blank"
+                  >Live Demo
+                  <i
+                    class="fa-solid fa-up-right-from-square"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <h2>Digital Profile</h2>
+          <div class="info_tags">
+            <p>Html</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+
+          <div class="info_para">
+            <p>
+              A responsive and interactive profile templete for users,
+              showcasing services, team members, and a gallery. Features include
+              a contact form, appointment booking, and social media integration,
+              all wrapped in a modern, user-friendly design.
+            </p>
+          </div>
+        </div>
+
+        <div class="project_card">
+          <div class="project_img">
+            <img
+              src="./assets/pro2.png"
+              alt="Screenshot of Digital Profile Project"
+            />
+            <div class="btn-wrapper">
+              <button>
+                <a href="https://whattowatch01.netlify.app/" target="_blank"
+                  >Live Demo
+                  <i
+                    class="fa-solid fa-up-right-from-square"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <h2>WhatToWatch</h2>
+          <div class="info_tags">
+            <p>React</p>
+            <p>Tailwind CSS</p>
+            <p>React Router</p>
+            <p>API Integration</p>
+          </div>
+
+          <div class="info_para">
+            <p>
+              WhatToWatch is a responsive React app that lets users explore
+              trending, top-rated, and upcoming movies and TV shows using the
+              TMDb API. It features clean UI, search functionality, detailed
+              pages, and smooth navigation.
+            </p>
+          </div>
+        </div>
+        <div class="project_card">
+          <div class="project_img">
+            <img
+              src="./assets/pro4.png"
+              alt="Screenshot of Digital Profile Project"
+            />
+            <div class="btn-wrapper">
+              <button>
+                <a href="https://petcard.netlify.app/" target="_blank"
+                  >Live Demo
+                  <i
+                    class="fa-solid fa-up-right-from-square"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <h2>Pet Card</h2>
+          <div class="info_tags">
+            <p>MERN</p>
+          </div>
+
+          <div class="info_para">
+            <p>
+              A full-stack web application built using the MERN stack that
+              allows users to create and manage pet profiles, upload images,
+              track medical records, and share digital pet cards through a
+              modern, responsive UI..
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="slide off-white">
+      <h1 class="heading">Contact Me</h1>
+      <div class="contactus">
+        <div class="text">
+          <h1>Let's Talk</h1>
+          <p class="mb-2">
+            Have a project in mind or want to collaborate? Feel free to reach
+            out! I'm always open to discussing new opportunities and ideas.
+          </p>
+
+          <div class="mydetails">
+            <div class="contacticon">
+              <div class="icons">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="flex">
+                <h3>Email</h3>
+                <p>aniketahire008@gmial.com</p>
+              </div>
+            </div>
+
+            <div class="contacticon">
+              <div class="icons">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="flex">
+                <h3>Location</h3>
+                <p>Mumbai, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="C-form" id="contactForm">
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name.."
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+
+          <label for="subject">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+          <p id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Aniket's Portfolio. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a> | <a href="#about">About</a> |
+        <a href="#skills">Skills</a>
+      </div>
+    </footer>
+
+    <script>
+      // Toggle menu on hamburger click
+      function toggleMenu() {
+        const nav = document.querySelector(".nav");
+        nav.classList.toggle("active");
+      }
+
+      // Close menu when a nav link is clicked
+      const navLinks = document.querySelectorAll(".nav a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const nav = document.querySelector(".nav");
+          nav.classList.remove("active");
+        });
+      });
+
+      // contact form
+      const form = document.getElementById("contactForm");
+      const statusText = document.getElementById("formStatus");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+        };
+
+        statusText.innerHTML = "Sending...";
+
+        try {
+          const res = await fetch("http://localhost:5000/contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          });
+
+          const data = await res.json();
+
+          if (data.success) {
+            statusText.innerText = "Message sent successfully ✅";
+            form.reset();
+          } else {
+            statusText.innerText = "Failed to send message ❌";
+          }
+        } catch (error) {
+          statusText.innerText = "Server error ❌";
+        }
+      });
+    </script>
+  </body>
+</html>
