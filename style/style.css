@@ -356,13 +356,10 @@ header {
     position: absolute;
     bottom: 15px;
     right: 15px;
-    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.project_card:hover .btn-wrapper {
-    opacity: 1;
-}
+
 
 .btn-wrapper button {
     padding: 10px 16px;
@@ -678,12 +675,13 @@ footer .footer-links a:hover {
     .mydetails {
         text-align: left;
         display: flex;
-        flex-direction: row;
+
     }
 
     .C-form {
         width: 100%;
         max-width: 100%;
+        padding: 1.5rem;
     }
 
     .card {
