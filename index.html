@@ -349,6 +349,7 @@
 
         statusText.innerHTML = "Sending...";
 
+        statusText.style.color = "black";
         try {
           const res = await fetch("http://localhost:5000/contact", {
             method: "POST",
