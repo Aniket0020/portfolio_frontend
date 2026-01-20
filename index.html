@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -51,11 +51,12 @@
 
         <div class="cv-button">
           <a
-            href="./file/Aniket_JD_final.pdf"
-            download="AniketAhire_CV"
+            href="/Aniket_JD_final.pdf"
+            download="AniketAhire_CV.pdf"
             class="btn"
-            >Download CV</a
           >
+            Download CV
+          </a>
         </div>
       </div>
 
@@ -347,20 +348,21 @@
           message: document.getElementById("message").value,
         };
 
-
         statusText.innerHTML = "Sending...";
 
-          statusText.style.color = "black";
+        statusText.style.color = "black";
         try {
-          const res = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
+          const res = await fetch(
+            "https://portfolio-backend-ka09.onrender.com/",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData),
             },
-            body: JSON.stringify(formData),
-          });
+          );
 
-          
           const data = await res.json();
 
           if (data.success) {
